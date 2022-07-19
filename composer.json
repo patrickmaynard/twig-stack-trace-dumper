@@ -26,10 +26,5 @@
         "exclude-from-classmap": [
             "/Tests/"
         ]
-    },
-    "extra": {
-        "branch-alias": {
-            "main": "1.0.1"
-        }
     }
 }
