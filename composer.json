@@ -3,7 +3,7 @@
     "type": "library",
     "description": "A Twig extension that allows the user to get a stack trace from within a template",
     "keywords": ["twig", "html", "stack trace", "dump"],
-    "homepage": "https://github.com/patrickmayanrd/twig-stack-trace-dumper",
+    "homepage": "http://home.patrickmaynard.com",
     "license": "MIT",
     "minimum-stability": "dev",
     "authors": [
