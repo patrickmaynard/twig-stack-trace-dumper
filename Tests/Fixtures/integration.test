@@ -1,0 +1,9 @@
+--TEST--
+"trace" function
+--TEMPLATE--
+{{ trace() }}
+
+--DATA--
+return ['']
+--EXPECT--
+Twig\TemplateWrapper-&gt;render(Array)

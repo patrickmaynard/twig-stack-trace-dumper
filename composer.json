@@ -1,0 +1,35 @@
+{
+    "name": "patrick-maynard/twig-stack-trace-dumper",
+    "type": "library",
+    "description": "A Twig extension for Symfony String",
+    "keywords": ["twig", "html", "stack trace", "dump"],
+    "homepage": "https://github.com/patrickmayanrd/twig-stack-trace-dumper",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Patrick Maynard",
+            "email": "patrick.maynard@internations.org",
+            "homepage": "http://home.patrickmaynard.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "twig/twig": "*"
+    },
+    "require-dev": {
+        "symfony/phpunit-bridge": "^4.4.9|^5.0.9|^6.0"
+    },
+    "autoload": {
+        "psr-4" : { "PatrickMaynard\\TwigExtensions\\Trace\\" : "" },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "extra": {
+        "branch-alias": {
+            "main": "0.10-dev"
+        }
+    }
+}
