@@ -5,7 +5,7 @@ This Twig extension adds the trace() function to Twig.
 
 It will output a string containing a stack trace.
 
-I recommend only using it as a dev dependency. Using in a production environment is probably not a good idea.
+I recommend only using it as a dev dependency. Using it in a production environment is probably not a good idea.
 
 I created this tool for use in an environment where neither the Symfony toolbar nor XDebug was available.
 
