@@ -11,6 +11,7 @@ class StackTraceDumperExtension extends AbstractExtension
     {
         return [
             new TwigFunction('trace', [$this, 'returnStackTraceAsString']),
+            new TwigFunction('trace_via_debug_backtrace', [$this, 'returnStackTraceAsArrayString']),
         ];
     }
 
@@ -19,4 +20,9 @@ class StackTraceDumperExtension extends AbstractExtension
         $unthrownException = new \Exception();
         return PHP_EOL . '<pre>' . PHP_EOL . $unthrownException->getTraceAsString() . PHP_EOL . '</pre>' . PHP_EOL;
     }
+
+    public function returnStackTraceAsArrayString(): string 
+    {
+        return '<pre>' . print_r(debug_backtrace(), true) . '<.pre>' . PHP_EOL;
+    } 
 }
