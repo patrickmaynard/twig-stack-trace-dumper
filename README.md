@@ -32,4 +32,6 @@ Once that's done, you can use the new function in Twig files like this:
 {{ trace() }}
 ```
 
+UNTESTED: You could also try using `{{ trace_via_debug_backtrace() }}` to get different formatting. I haven't yet tested this. 
+
 Happy debugging!
