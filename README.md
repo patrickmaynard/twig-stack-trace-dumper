@@ -40,6 +40,6 @@ UPDATE: As of 2025, the Symfony documentation is pretty flippant about what you 
 ```
 
 
-If you want a little more detail than `{{ trace()|raw }}` provides, you could also try using `{{ trace_via_debug_backtrace()|raw }}` to get different formatting and some extra information. I haven't yet tested this. If you get a chance to make it work and write a test, please open a pull request. 
+If you want a little more detail than `{{ trace()|raw }}` provides, you could also try using `{{ trace_via_debug_backtrace()|raw }}` to get different formatting and some extra information. I have only done a smoke test on this. If you get a chance to write an integration test for this function, please open a pull request. Thank you. 
 
 Happy debugging!
