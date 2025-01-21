@@ -23,6 +23,6 @@ class StackTraceDumperExtension extends AbstractExtension
 
     public function returnStackTraceAsArrayString(): string 
     {
-        return '<pre>' . var_dump(debug_backtrace(), true) . '<.pre>' . PHP_EOL;
+        return '<pre>' . var_dump(debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS), true) . '</pre>' . PHP_EOL;
     } 
 }
